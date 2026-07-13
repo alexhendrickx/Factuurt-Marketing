@@ -1,0 +1,40 @@
+{
+  "name": "factuurt-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint",
+    "clean": "rm -rf .next",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync:domain": "node scripts/sync-domain.mjs",
+    "screenshots": "node --experimental-strip-types scripts/take-screenshots.ts",
+    "e2e:ci": "playwright test"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "^16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.60.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^4.1.8"
+  }
+}
