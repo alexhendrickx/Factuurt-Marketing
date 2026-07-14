@@ -42,6 +42,25 @@ async function login(page: Page): Promise<void> {
 }
 
 /**
+ * Sluit app-prompts die niet in een marketing-screenshot horen: de
+ * "Meldingen inschakelen"-banner en de PWA-installatieprompt. Best-effort —
+ * ontbreekt de knop, dan gewoon doorgaan.
+ */
+async function dismissOverlays(page: Page): Promise<void> {
+  for (const name of ['Niet nu', 'Sluiten']) {
+    try {
+      const btn = page.getByRole('button', { name, exact: true }).first()
+      if (await btn.isVisible({ timeout: 500 })) {
+        await btn.click()
+        await page.waitForTimeout(150)
+      }
+    } catch {
+      // knop niet aanwezig op dit scherm → overslaan
+    }
+  }
+}
+
+/**
  * Controleer of de app bereikbaar is voordat we Playwright starten.
  */
 async function checkAppReachability(): Promise<void> {
@@ -140,6 +159,31 @@ async function main(): Promise<void> {
           }
         }
 
+        // Sluit prompts (meldingen/PWA) die de screenshot zouden vervuilen
+        await dismissOverlays(page)
+
+        // Offline-shot: data is nu online geladen → zet de browser offline zodat
+        // de OfflineBar verschijnt en de app "gewoon doorwerkt" toont.
+        if (shot.offline) {
+          await context.setOffline(true)
+          try {
+            await page.waitForSelector('text=wijzigingen worden lokaal opgeslagen', {
+              timeout: 5_000,
+            })
+          } catch {
+            console.warn(`OfflineBar niet verschenen voor ${shot.slug}, doorgaan...`)
+          }
+          await page.waitForTimeout(300)
+        }
+
+        // Verwijder de Next.js dev-indicator (dev-only, niet in productie).
+        // De badge leeft in de shadow-root van <nextjs-portal>; de host uit de
+        // light-DOM verwijderen haalt hem betrouwbaar weg (CSS wint niet van de
+        // inline !important-stijl van de host).
+        await page.evaluate(() => {
+          document.querySelectorAll('nextjs-portal').forEach((el) => el.remove())
+        })
+
         // Settle-wait
         await page.waitForTimeout(400)
 
@@ -149,6 +193,11 @@ async function main(): Promise<void> {
           path: publicPath,
           fullPage: shot.fullPage ?? false,
         })
+
+        // Herstel online voor eventuele volgende shots
+        if (shot.offline) {
+          await context.setOffline(false)
+        }
 
         results.push(`✓ ${shot.slug} (${shot.route})`)
         taken++

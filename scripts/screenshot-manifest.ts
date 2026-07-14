@@ -29,6 +29,13 @@ export interface Shot {
   waitForSelector?: string
   /** Optioneel: volledige-pagina i.p.v. viewport-crop (default: viewport). */
   fullPage?: boolean
+  /**
+   * Optioneel: schiet dit scherm in offline-modus. De pipeline laadt de route
+   * eerst online (zodat de data cachet), zet daarna de browser offline zodat de
+   * OfflineBar ("wijzigingen worden lokaal opgeslagen") verschijnt, en schiet
+   * dan. Voor de Offline-sectie (§4.6) — toont de app die gewoon doorwerkt.
+   */
+  offline?: boolean
 }
 
 /**
@@ -41,7 +48,7 @@ export const SHOTS: readonly Shot[] = [
   { slug: 'werkbon', route: '/werkbonnen', usedIn: 'Feature-grid: timer/foto/handtekening (§4.5)' },
   { slug: 'facturen', route: '/facturen', usedIn: 'Feature-grid: PDF-export (§4.5)' },
   { slug: 'bibliotheek', route: '/instellingen/bibliotheek', usedIn: 'Feature-grid: prijsbibliotheek (§4.5)' },
-  { slug: 'offline', route: '/offline', usedIn: 'Offline-sectie (§4.6)' },
+  { slug: 'offline', route: '/werkbonnen', usedIn: 'Offline-sectie (§4.6)', offline: true },
 ] as const
 
 /** Publiek pad van een shot binnen de site. */
