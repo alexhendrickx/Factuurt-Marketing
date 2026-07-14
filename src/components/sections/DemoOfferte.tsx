@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { cn } from '@/lib/cn'
 import { SectionShell } from '@/components/ui/SectionShell'
+import { DeviceFrame } from '@/components/ui/DeviceFrame'
 import { Button } from '@/components/ui/Button'
 import { OfferteCard } from '@/components/mockups/OfferteCard'
 import { WerkbonCard } from '@/components/mockups/WerkbonCard'
@@ -168,10 +169,14 @@ export function DemoOfferte(): JSX.Element {
           </fieldset>
         </div>
 
-        {/* Kolom B: Kaart (offerte/werkbon met flip) */}
+        {/* Kolom B: Kaart (offerte/werkbon met flip) in telefoonvorm */}
         <div className="flex flex-col gap-6">
           {/* Flip-blok */}
-          <div className="flex-1" style={{ perspective: 1000 }}>
+          <DeviceFrame>
+            <div
+              className="flex h-full flex-col justify-center overflow-y-auto bg-surface-alt p-3"
+              style={{ perspective: 1000 }}
+            >
             {reduceMotion ? (
               // Directe swap zonder animatie
               <>
@@ -227,7 +232,8 @@ export function DemoOfferte(): JSX.Element {
                 </motion.div>
               </AnimatePresence>
             )}
-          </div>
+            </div>
+          </DeviceFrame>
 
           {/* CTA's */}
           {!flipped ? (
@@ -243,7 +249,7 @@ export function DemoOfferte(): JSX.Element {
                 onClick={() => setFlipped(true)}
                 disabled={isEmpty}
                 className={cn(
-                  'min-h-[44px] rounded-lg px-6 text-base font-semibold',
+                  'mx-auto w-full max-w-[300px] min-h-[44px] rounded-lg px-6 text-base font-semibold',
                   'transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                   isEmpty
                     ? 'bg-primary/50 text-surface cursor-not-allowed'
@@ -256,7 +262,7 @@ export function DemoOfferte(): JSX.Element {
           ) : (
             // Werkbon-staat
             <>
-              <div className="text-center space-y-4">
+              <div className="mx-auto w-full max-w-[300px] text-center space-y-4">
                 <p className="text-sm text-ink-muted">{demoOfferte.outro}</p>
                 <Button
                   variant="primary"

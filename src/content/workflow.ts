@@ -15,13 +15,13 @@ export interface WorkflowRegel {
 
 export interface WorkflowStep {
   id: WorkflowStepId
-  /** Kort tab-label voor de stappen-navigatie. TODO-copywriter. */
+  /** Kort tab-label voor de stappen-navigatie. copywriter. */
   label: string
   /** lucide-icoonnaam; moet in iconMap staan. */
   icon: string
-  /** Kop boven de mockup voor deze stap. TODO-copywriter. */
+  /** Kop boven de mockup voor deze stap. copywriter. */
   heading: string
-  /** Eén zin die uitlegt wat er in deze stap gebeurt. TODO-copywriter. */
+  /** Eén zin die uitlegt wat er in deze stap gebeurt. copywriter. */
   body: string
   /** Statuschip-tekst in de mockup-koptekst (bv. 'Concept', 'Getekend',
    *  'Betaald'). Executor, app-getrouwe domeinterm. */
@@ -31,7 +31,7 @@ export interface WorkflowStep {
 }
 
 export interface WorkflowContent {
-  /** Sectie-kop (h2). TODO-copywriter. */
+  /** Sectie-kop (h2). copywriter. */
   heading: string
   /** Optionele intro; leeg '' → niet renderen (patroon uit features.ts). */
   intro: string
@@ -41,7 +41,7 @@ export interface WorkflowContent {
    *  zodat de bezoeker ziet dat er niets opnieuw ingevoerd wordt (PLAN §6-idee,
    *  hier illustratief). Executor, app-getrouw. 2–3 regels. */
   regels: WorkflowRegel[]
-  /** Afsluiter-CTA-tekst onder de walkthrough. TODO-copywriter. */
+  /** Afsluiter-CTA-tekst onder de walkthrough. copywriter. */
   outro: string
   /** Klant + project voor de mockup-koptekst — sluit aan op de demo-seed
    *  ('Elektro Peeters' / 'Renovatie zekeringkast', PLAN §5A). Executor. */
@@ -64,33 +64,34 @@ export const workflowLabels = {
 } as const
 
 export const workflow: WorkflowContent = {
-  heading: 'TODO-copywriter',
-  intro: '',
+  heading: 'Zo werkt het',
+  intro:
+    'Eén flow van offerte tot betaalde factuur — zonder iets twee keer in te typen.',
   steps: [
     {
       id: 'offerte',
-      label: 'TODO-copywriter',
+      label: 'Offerte',
       icon: 'FileText',
-      heading: 'TODO-copywriter',
-      body: 'TODO-copywriter',
+      heading: 'Maak je offerte op de werf',
+      body: 'Kies je regels uit je eigen prijsbibliotheek. BTW en totalen rekenen zichzelf uit — je offerte is klaar voor je terug in de camionette zit.',
       statusLabel: 'Concept',
       statusTone: 'neutral',
     },
     {
       id: 'werkbon',
-      label: 'TODO-copywriter',
+      label: 'Werkbon',
       icon: 'ClipboardList',
-      heading: 'TODO-copywriter',
-      body: 'TODO-copywriter',
+      heading: 'Eén tik en het is een werkbon',
+      body: 'Dezelfde regels gaan gewoon mee — niets opnieuw invoeren. Je klant tekent ter plekke op je scherm.',
       statusLabel: 'Getekend',
       statusTone: 'neutral',
     },
     {
       id: 'factuur',
-      label: 'TODO-copywriter',
+      label: 'Factuur',
       icon: 'Receipt',
-      heading: 'TODO-copywriter',
-      body: 'TODO-copywriter',
+      heading: 'Factuur de deur uit, betaling opgevolgd',
+      body: 'Van getekende werkbon naar factuur in seconden. Je ziet meteen wie betaald heeft en wie nog een herinnering nodig heeft.',
       statusLabel: 'Betaald',
       statusTone: 'success',
     },
@@ -118,7 +119,7 @@ export const workflow: WorkflowContent = {
       btw: 6,
     },
   ],
-  outro: 'TODO-copywriter',
+  outro: 'Drie stappen, nul avondwerk. Je administratie is klaar wanneer jij het bent.',
   klantNaam: 'Elektro Peeters',
   projectNaam: 'Renovatie zekeringkast',
 }

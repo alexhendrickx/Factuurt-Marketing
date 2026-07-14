@@ -2,8 +2,10 @@
 import type { JSX } from 'react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, motion, useInView, useReducedMotion } from 'framer-motion'
+import type { ReactNode } from 'react'
 import { cn } from '@/lib/cn'
 import { SectionShell } from '@/components/ui/SectionShell'
+import { DeviceFrame } from '@/components/ui/DeviceFrame'
 import { Button } from '@/components/ui/Button'
 import { OfferteCard } from '@/components/mockups/OfferteCard'
 import { WerkbonCard } from '@/components/mockups/WerkbonCard'
@@ -13,6 +15,32 @@ import { site } from '@/content/site'
 import { calcBtwTotalen } from '@/domain/factuur/btwCalculator'
 import { resolveIcon } from '@/lib/iconMap'
 import { useRevealOnMount } from '@/lib/useRevealOnMount'
+
+/** Crossfade-wrapper per stap; bij reduced-motion een directe swap. */
+function StepFade({
+  activeStep,
+  reduceMotion,
+  children,
+}: {
+  activeStep: WorkflowStepId
+  reduceMotion: boolean | null
+  children: ReactNode
+}): JSX.Element {
+  if (reduceMotion) return <div>{children}</div>
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={activeStep}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -12 }}
+        transition={{ duration: 0.3 }}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
+  )
+}
 
 export function WorkflowSpine(): JSX.Element {
   const [activeStep, setActiveStep] = useState<WorkflowStepId>('offerte')
@@ -63,6 +91,8 @@ export function WorkflowSpine(): JSX.Element {
     setActiveStep(stepId)
     setIsPaused(true)
   }
+
+  const activeStepContent = workflow.steps.find((s) => s.id === activeStep) ?? workflow.steps[0]
 
   return (
     <div ref={sectionRef}>
@@ -123,50 +153,27 @@ export function WorkflowSpine(): JSX.Element {
         })}
       </div>
 
-      {/* Mockup card display */}
-      <div className="mt-12 relative min-h-[400px]">
-        {reduceMotion ? (
-          <div id={`step-${activeStep}`}>
-            {activeStep === 'offerte' && (
-              <OfferteCard
-                klantNaam={workflow.klantNaam}
-                projectNaam={workflow.projectNaam}
-                statusLabel={workflow.steps[0].statusLabel}
-                statusTone={workflow.steps[0].statusTone}
-                regels={workflow.regels}
-                totalen={totalen}
-              />
-            )}
-            {activeStep === 'werkbon' && (
-              <WerkbonCard
-                klantNaam={workflow.klantNaam}
-                projectNaam={workflow.projectNaam}
-                statusLabel={workflow.steps[1].statusLabel}
-                statusTone={workflow.steps[1].statusTone}
-                regels={workflow.regels}
-              />
-            )}
-            {activeStep === 'factuur' && (
-              <FactuurCard
-                klantNaam={workflow.klantNaam}
-                projectNaam={workflow.projectNaam}
-                statusLabel={workflow.steps[2].statusLabel}
-                statusTone={workflow.steps[2].statusTone}
-                regels={workflow.regels}
-                totalen={totalen}
-              />
-            )}
+      {/* Actieve stap: uitleg + app-getrouwe kaart in telefoonvorm */}
+      <div
+        id={`step-${activeStep}`}
+        role="tabpanel"
+        aria-label={activeStepContent.label}
+        className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-center"
+      >
+        <StepFade activeStep={activeStep} reduceMotion={reduceMotion}>
+          <div className="text-center lg:text-left">
+            <h3 className="text-2xl font-semibold tracking-tight text-ink">
+              {activeStepContent.heading}
+            </h3>
+            <p className="mx-auto mt-3 max-w-md text-ink-muted lg:mx-0">
+              {activeStepContent.body}
+            </p>
           </div>
-        ) : (
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeStep}
-              id={`step-${activeStep}`}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.3 }}
-            >
+        </StepFade>
+
+        <DeviceFrame>
+          <div className="flex h-full flex-col justify-center overflow-y-auto bg-surface-alt p-3">
+            <StepFade activeStep={activeStep} reduceMotion={reduceMotion}>
               {activeStep === 'offerte' && (
                 <OfferteCard
                   klantNaam={workflow.klantNaam}
@@ -196,9 +203,9 @@ export function WorkflowSpine(): JSX.Element {
                   totalen={totalen}
                 />
               )}
-            </motion.div>
-          </AnimatePresence>
-        )}
+            </StepFade>
+          </div>
+        </DeviceFrame>
       </div>
 
       {/* Outro text + CTA */}

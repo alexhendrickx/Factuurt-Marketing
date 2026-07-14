@@ -4,8 +4,11 @@ import { cn } from '@/lib/cn'
 interface DeviceFrameProps {
   /** De schermafbeelding of live-mockup binnen het frame. */
   children: ReactNode
-  /** Toegankelijke omschrijving van wat er in beeld is (a11y, PLAN §9). */
-  label: string
+  /** Toegankelijke omschrijving van wat er in beeld is (a11y, PLAN §9).
+   *  Alleen zetten voor puur visuele inhoud (screenshots): role="img" plat
+   *  de subtree af. Weglaten voor live-mockups/carrousels met eigen leesbare
+   *  of interactieve inhoud. */
+  label?: string
   className?: string
 }
 
@@ -16,8 +19,7 @@ interface DeviceFrameProps {
 export function DeviceFrame({ children, label, className }: DeviceFrameProps) {
   return (
     <div
-      role="img"
-      aria-label={label}
+      {...(label !== undefined ? { role: 'img', 'aria-label': label } : {})}
       className={cn(
         'relative mx-auto w-full max-w-[300px] rounded-[2.5rem]',
         'border-[10px] border-ink bg-ink shadow-xl',

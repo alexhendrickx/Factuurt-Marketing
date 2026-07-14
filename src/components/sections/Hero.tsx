@@ -1,8 +1,8 @@
 'use client'
-import Image from 'next/image'
 import { cn } from '@/lib/cn'
 import { SectionShell } from '@/components/ui/SectionShell'
 import { DeviceFrame } from '@/components/ui/DeviceFrame'
+import { ScreenshotCarousel } from '@/components/ui/ScreenshotCarousel'
 import { Button } from '@/components/ui/Button'
 import { hero } from '@/content/hero'
 import { site } from '@/content/site'
@@ -43,15 +43,10 @@ export function Hero() {
             revealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
           )}
         >
-          <DeviceFrame label="Het dashboard van Factuurt op een telefoon">
-            <Image
-              src="/screenshots/dashboard.png"
-              alt="Dashboard van de Factuurt-app met openstaande offertes en facturen"
-              width={390}
-              height={844}
-              sizes="(min-width: 1024px) 300px, 80vw"
-              priority
-              className="h-full w-full object-cover"
+          <DeviceFrame>
+            <ScreenshotCarousel
+              slides={hero.slides}
+              navLabel={hero.slidesNavLabel}
             />
           </DeviceFrame>
         </div>

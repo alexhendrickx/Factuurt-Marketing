@@ -1,0 +1,184 @@
+[     246ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     312ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1971ms] [WARNING] Image with src "/screenshots/agenda.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    3247ms] [WARNING] Image with src "/screenshots/werkbon.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  275476ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  275504ms] [LOG] [Fast Refresh] done in 51ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  277086ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  277114ms] [LOG] [Fast Refresh] done in 23ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  283579ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  283609ms] [LOG] [Fast Refresh] done in 21ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  308105ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  308134ms] [LOG] [Fast Refresh] done in 18ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  368077ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  368106ms] [LOG] [Fast Refresh] done in 23ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  371127ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  371156ms] [LOG] [Fast Refresh] done in 21ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  391876ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  391907ms] [LOG] [Fast Refresh] done in 31ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  402312ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  402392ms] [LOG] [Fast Refresh] done in 48ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  402458ms] TypeError: Failed to construct 'Image': Please use the 'new' operator, this DOM object constructor cannot be called as a function.
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:186)
+    at performSyncWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10179:316)
+    at processRootScheduleInMicrotask (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10200:106)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10274:158
+[  403729ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  403796ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  403842ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  403945ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  403955ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  427845ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  427853ms] ReferenceError: activeStepContent is not defined
+    at WorkflowSpine (http://localhost:3005/_next/static/chunks/_1c50e1o._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fsections%252FWorkflowSpine.tsx+%255Bapp-client%255D+%2528ecmascript%2529:168:35)
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performSyncWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10179:316)
+    at flushSyncWork$1 (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9230:86)
+    at Object.scheduleRefresh (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:299:13)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:384:38)
+    at applyUpdate (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:878:31)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:886:13
+[  427895ms] [LOG] [Fast Refresh] done in 41ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436767ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436768ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436806ms] ReferenceError: activeStepContent is not defined
+    at WorkflowSpine (http://localhost:3005/_next/static/chunks/_1c50e1o._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fsections%252FWorkflowSpine.tsx+%255Bapp-client%255D+%2528ecmascript%2529:170:35)
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6665:639)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performSyncWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10179:316)
+    at flushSyncWork$1 (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9230:86)
+    at Object.scheduleRefresh (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:299:13)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:384:38)
+    at applyUpdate (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:878:31)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:886:13
+[  436818ms] [LOG] [Fast Refresh] done in 27ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436828ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3005/:0
+[  436840ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436848ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  436913ms] ReferenceError: activeStepContent is not defined
+    at WorkflowSpine (http://localhost:3005/_next/static/chunks/_1c50e1o._.js:1699:35)
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6665:639)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+[  436917ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3005/favicon.ico:0
+[  441173ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  441175ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  441212ms] [LOG] [Fast Refresh] done in 32ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  441217ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3005/:0
+[  441225ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  441231ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  441295ms] ReferenceError: activeStepContent is not defined
+    at WorkflowSpine (http://localhost:3005/_next/static/chunks/_1c50e1o._.js:1740:35)
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6665:639)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+[  443514ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  443515ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  443564ms] [LOG] [Fast Refresh] done in 29ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  443589ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  443599ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  454421ms] [ERROR] ./src/components/sections/DemoOfferte.tsx:287:15
+Expected '</', got 'jsx text'
+  285 |             </>
+  286 |           )}
+> 287 |         </div>
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 288 |       </div>
+      | ^^^^^^
+  289 |     </SectionShell>
+  290 |   )
+  291 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/sections/DemoOfferte.tsx
+    ./src/app/page.tsx @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[  454446ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  456723ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  456750ms] ReferenceError: DeviceFrame is not defined
+    at DemoOfferte (http://localhost:3005/_next/static/chunks/_1c50e1o._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fsections%252FDemoOfferte.tsx+%255Bapp-client%255D+%2528ecmascript%2529:273:232)
+    at Object.react_stack_bottom_frame (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:186)
+    at performSyncWorkOnRoot (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10179:316)
+    at processRootScheduleInMicrotask (http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10200:106)
+    at http://localhost:3005/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10274:158
+[  456786ms] [LOG] [Fast Refresh] done in 26ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  458781ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  458782ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  458826ms] [LOG] [Fast Refresh] done in 27ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  458860ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  458883ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  495193ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  495209ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  496393ms] [WARNING] Image with src "/screenshots/facturen.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  529508ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  529536ms] [LOG] [Fast Refresh] done in 23ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  531418ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  531446ms] [LOG] [Fast Refresh] done in 22ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  539703ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  539715ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  572848ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  572875ms] [LOG] [Fast Refresh] done in 24ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  576130ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  576157ms] [LOG] [Fast Refresh] done in 23ms @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  592260ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  592271ms] [LOG] [HMR] connected @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
