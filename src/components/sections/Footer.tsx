@@ -6,17 +6,41 @@ import { cn } from '@/lib/cn'
 
 export function Footer() {
   const validLinks = footer.links.filter((link) => link.href.trim().length > 0)
+  const { business, businessHeading } = footer
 
   return (
     <footer className="bg-surface-alt border-t border-ink/10">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-3">
           {/* Brand + tagline */}
           <div>
             <h3 className="text-lg font-bold text-ink">{site.brand.name}</h3>
             {footer.tagline.trim().length > 0 && (
               <p className="mt-2 text-sm text-ink-muted">{footer.tagline}</p>
             )}
+          </div>
+
+          {/* Bedrijfsgegevens (colofon) — accounthouder, e-mail, activiteit. */}
+          <div>
+            <h3 className="text-sm font-semibold text-ink">{businessHeading}</h3>
+            <address className="mt-2 space-y-1 text-sm text-ink-muted not-italic">
+              <p className="text-ink">{business.name}</p>
+              <p>
+                <a
+                  href={`mailto:${business.email}`}
+                  className="inline-flex min-h-[44px] items-center text-ink-muted hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  {business.email}
+                </a>
+              </p>
+              {business.ondernemingsnummer.trim().length > 0 && (
+                <p>Ondernemingsnummer: {business.ondernemingsnummer}</p>
+              )}
+              {business.address.trim().length > 0 && <p>{business.address}</p>}
+              {business.activity.trim().length > 0 && (
+                <p className="pt-1">{business.activity}</p>
+              )}
+            </address>
           </div>
 
           {/* Navigation */}

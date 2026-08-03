@@ -32,6 +32,24 @@ describe('footer content', () => {
   })
 
   it('structure matches FooterContent interface', () => {
-    expect(Object.keys(footer).sort()).toEqual(['copyrightTemplate', 'links', 'tagline'].sort())
+    expect(Object.keys(footer).sort()).toEqual(
+      ['business', 'businessHeading', 'copyrightTemplate', 'links', 'tagline'].sort(),
+    )
+  })
+
+  it('exposes business identity for ownership verification', () => {
+    expect(typeof footer.businessHeading).toBe('string')
+    expect(footer.businessHeading.trim().length).toBeGreaterThan(0)
+    expect(footer.business.name.trim().length).toBeGreaterThan(0)
+    expect(footer.business.activity.trim().length).toBeGreaterThan(0)
+  })
+
+  it('has a valid public business email', () => {
+    expect(footer.business.email).toMatch(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)
+  })
+
+  it('has business ondernemingsnummer and address as strings (may be empty)', () => {
+    expect(typeof footer.business.ondernemingsnummer).toBe('string')
+    expect(typeof footer.business.address).toBe('string')
   })
 })
