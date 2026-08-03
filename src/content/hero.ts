@@ -25,7 +25,7 @@ export interface HeroContent {
 export const hero: HeroContent = {
   title: 'Van offerte tot betaalde factuur, vanop de werf.',
   subtitle:
-    'De app voor de zelfstandige elektricien: offertes, werkbonnen en facturen op je telefoon — met je eigen prijsbibliotheek en ook zonder bereik.',
+    'De app voor de zelfstandige elektricien: offertes, werkbonnen en facturen op je telefoon, met je eigen prijsbibliotheek en ook zonder bereik.',
   slides: [
     {
       slug: 'dashboard',

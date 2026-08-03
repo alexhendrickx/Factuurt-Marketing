@@ -47,7 +47,7 @@ export interface DemoOfferteContent {
 export const demoOfferte: DemoOfferteContent = {
   heading: 'Probeer het zelf',
   intro:
-    'Stel hieronder een mini-offerte samen. Dit is geen filmpje — het rekent met exact dezelfde code als de app.',
+    'Stel hieronder een mini-offerte samen. Dit is geen filmpje, maar het rekent met exact dezelfde code als de app.',
   bibliotheekLabel: 'Kies wat je gedaan hebt',
   btwToggle: {
     label: 'BTW-tarief (6% bij renovatie)',

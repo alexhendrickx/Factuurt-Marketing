@@ -60,5 +60,5 @@ export const footer: FooterContent = {
     ondernemingsnummer: '',
     address: '',
   },
-  copyrightTemplate: '© {year} Factuurt — gemaakt voor de elektricien op de werf.',
+  copyrightTemplate: '© {year} Factuurt - gemaakt voor de elektricien op de werf.',
 }

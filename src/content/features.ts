@@ -44,7 +44,7 @@ export const features: FeaturesContent = {
     {
       title: 'Werkbon ter plekke',
       detail:
-        'Je noteert uren, materiaal en foto’s op de werf en laat de klant meteen tekenen — niets raakt kwijt.',
+        'Je noteert uren, materiaal en foto’s op de werf en laat de klant meteen tekenen - niets raakt kwijt.',
       icon: 'ClipboardList',
       slug: 'werkbon',
       imageAlt: 'Werkbon in Factuurt met timer, foto\'s en handtekening van de klant',

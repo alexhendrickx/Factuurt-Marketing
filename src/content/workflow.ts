@@ -66,14 +66,14 @@ export const workflowLabels = {
 export const workflow: WorkflowContent = {
   heading: 'Zo werkt het',
   intro:
-    'Eén flow van offerte tot betaalde factuur — zonder iets twee keer in te typen.',
+    'Eén flow van offerte tot betaalde factuur, zonder iets twee keer in te typen.',
   steps: [
     {
       id: 'offerte',
       label: 'Offerte',
       icon: 'FileText',
       heading: 'Maak je offerte op de werf',
-      body: 'Kies je regels uit je eigen prijsbibliotheek. BTW en totalen rekenen zichzelf uit — je offerte is klaar voor je terug in de camionette zit.',
+      body: 'Kies je regels uit je eigen prijsbibliotheek. BTW en totalen rekenen zichzelf uit, je offerte is klaar voor je terug in de camionette zit.',
       statusLabel: 'Concept',
       statusTone: 'neutral',
     },

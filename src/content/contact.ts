@@ -32,7 +32,7 @@ export interface ContactContent {
 export const contact: ContactContent = {
   heading: 'Stel je vraag',
   intro:
-    'Iets niet duidelijk, of wil je gewoon even sparren over je administratie? Stuur een bericht — je krijgt persoonlijk antwoord.',
+    'Iets niet duidelijk, of wil je gewoon even sparren over je administratie? Stuur een bericht en je krijgt persoonlijk antwoord.',
   fields: {
     naam: { label: 'Je naam', placeholder: 'Jan Peeters' },
     email: { label: 'Je e-mailadres', placeholder: 'jan@elektro-peeters.be' },
@@ -43,7 +43,7 @@ export const contact: ContactContent = {
   },
   submitLabel: 'Verstuur bericht',
   submittingLabel: 'Bezig met versturen…',
-  successTitle: 'Bericht verstuurd — bedankt!',
+  successTitle: 'Bericht verstuurd - bedankt!',
   successBody: 'We lezen alles zelf en antwoorden zo snel mogelijk.',
   errorMessage:
     'Er ging iets mis bij het versturen. Probeer het straks opnieuw of mail ons rechtstreeks.',

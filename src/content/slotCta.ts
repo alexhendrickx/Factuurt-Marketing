@@ -14,6 +14,6 @@ export interface SlotCtaContent {
 
 export const slotCta: SlotCtaContent = {
   heading: 'Klaar om je avonden terug te winnen?',
-  subline: 'Offerte, werkbon en factuur op je telefoon — je start gratis, zonder kaartgegevens.',
+  subline: 'Offerte, werkbon en factuur op je telefoon, je start gratis, zonder kaartgegevens.',
   secondaryLabel: 'Of stel je vraag',
 }

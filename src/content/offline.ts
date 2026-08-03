@@ -32,7 +32,7 @@ export interface OfflineContent {
 export const offline: OfflineContent = {
   heading: 'Werkt ook drie verdiepingen onder de grond.',
   intro:
-    'Geen bereik in de kelder of de nieuwbouw? Je maakt je offerte en werkbon gewoon af — Factuurt synchroniseert vanzelf zodra je weer netwerk hebt.',
+    'Geen bereik in de kelder of de nieuwbouw? Je maakt je offerte en werkbon gewoon af, de factuurt synchroniseert vanzelf zodra je weer netwerk hebt.',
   slug: 'offline',
   imageAlt: 'Factuurt-scherm dat toont dat je werkbon offline bewaard blijft en later synchroniseert',
   points: [
@@ -51,7 +51,7 @@ export const offline: OfflineContent = {
     {
       title: 'Synct vanzelf',
       detail:
-        'Zodra je weer netwerk hebt, synchroniseert alles op de achtergrond — jij hoeft niets te doen.',
+        'Zodra je weer netwerk hebt, synchroniseert alles op de achtergrond, jij hoeft niets te doen.',
       icon: 'RefreshCw',
     },
   ],

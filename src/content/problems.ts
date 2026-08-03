@@ -32,7 +32,7 @@ export const problems: ProblemsContent = {
     {
       title: 'Je vergeet uren en materiaal door te rekenen.',
       detail:
-        'Niet genoteerd op de werf, dus factureer je te weinig — en dat merk je pas veel later.',
+        'Niet genoteerd op de werf, dus factureer je te weinig en dat merk je pas veel later.',
       icon: 'Receipt',
     },
     {

@@ -25,7 +25,7 @@ export interface VoorWieContent {
 
 export const voorWie: VoorWieContent = {
   heading: 'Gemaakt voor wie zelf op de werf staat.',
-  intro: 'Voor de zelfstandige elektricien in België — en de kleine ploeg errond.',
+  intro: 'Voor de zelfstandige elektricien in België en de kleine ploeg errond.',
   audiences: [
     {
       title: 'Zelfstandige elektricien',
@@ -46,5 +46,5 @@ export const voorWie: VoorWieContent = {
       icon: 'BadgeEuro',
     },
   ],
-  footnote: 'Facturen conform de Belgische BTW-regels — 21% en 6% bij renovatie.',
+  footnote: 'Facturen conform de Belgische BTW-regels.',
 }
