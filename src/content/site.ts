@@ -26,10 +26,10 @@ const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? '#'
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://factuurt.be'
 
 export const site: SiteContent = {
-  brand: { name: 'Factuurt' },
+  brand: { name: 'FaktuurT' },
   url: siteUrl,
   meta: {
-    title: 'Factuurt — van offerte tot betaalde factuur, vanop de werf',
+    title: 'FaktuurT — van offerte tot betaalde factuur, vanop de werf',
     description:
       'De app voor zelfstandige elektriciens in België: offertes, werkbonnen en facturen op je telefoon, met je eigen prijsbibliotheek. Werkt ook offline.',
     // Doel-zoektermen uit PLAN §9.
@@ -48,6 +48,6 @@ export const site: SiteContent = {
   nav: {
     ariaLabel: 'Hoofdnavigatie',
     mobileCtaAriaLabel: 'Snel starten',
-    brandHomeLabel: 'Factuurt — naar boven',
+    brandHomeLabel: 'FaktuurT — naar boven',
   },
 }

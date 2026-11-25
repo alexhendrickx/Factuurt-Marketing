@@ -29,19 +29,19 @@ export const hero: HeroContent = {
   slides: [
     {
       slug: 'dashboard',
-      alt: 'Dashboard van de Factuurt-app met openstaande offertes en facturen',
+      alt: 'Dashboard van de FaktuurT-app met openstaande offertes en facturen',
     },
     {
       slug: 'werkbon',
-      alt: 'Werkbonnen-overzicht van de Factuurt-app met lopende werven',
+      alt: 'Werkbonnen-overzicht van de FaktuurT-app met lopende werven',
     },
     {
       slug: 'facturen',
-      alt: 'Facturen-overzicht van de Factuurt-app met betaalstatus per factuur',
+      alt: 'Facturen-overzicht van de FaktuurT-app met betaalstatus per factuur',
     },
     {
       slug: 'bibliotheek',
-      alt: 'Prijsbibliotheek van de Factuurt-app met eigen tarieven per regel',
+      alt: 'Prijsbibliotheek van de FaktuurT-app met eigen tarieven per regel',
     },
   ],
   slidesNavLabel: 'Kies welk app-scherm je ziet',

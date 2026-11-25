@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic'
 
 const TO = process.env.CONTACT_TO_EMAIL
 /** Afzender: verified domein zodra beschikbaar; anders Resend's test-afzender. */
-const FROM = process.env.CONTACT_FROM_EMAIL ?? 'Factuurt <onboarding@resend.dev>'
+const FROM = process.env.CONTACT_FROM_EMAIL ?? 'FaktuurT <onboarding@resend.dev>'
 
 export async function POST(request: Request) {
   let raw: unknown

@@ -3,7 +3,7 @@ import { LegalPage } from '@/components/ui/LegalPage'
 import { voorwaarden } from '@/content/legal'
 
 export const metadata: Metadata = {
-  title: `${voorwaarden.title} — Factuurt`,
+  title: `${voorwaarden.title} — FaktuurT`,
   description: voorwaarden.description,
 }
 

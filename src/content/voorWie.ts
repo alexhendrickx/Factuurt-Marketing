@@ -30,7 +30,7 @@ export const voorWie: VoorWieContent = {
     {
       title: 'Zelfstandige elektricien',
       detail:
-        'Je doet alles zelf: offerte, werf en factuur. Factuurt regelt de papieren, jij het werk.',
+        'Je doet alles zelf: offerte, werf en factuur. FaktuurT regelt de papieren, jij het werk.',
       icon: 'HardHat',
     },
     {

@@ -3,7 +3,7 @@ import { renderCopyright } from '../copyrightYear'
 
 describe('renderCopyright', () => {
   it('replaces {year} placeholder with provided year', () => {
-    expect(renderCopyright('© {year} Factuurt', 2026)).toBe('© 2026 Factuurt')
+    expect(renderCopyright('© {year} FaktuurT', 2026)).toBe('© 2026 FaktuurT')
   })
 
   it('handles multiple {year} placeholders', () => {
@@ -18,7 +18,7 @@ describe('renderCopyright', () => {
   })
 
   it('leaves template unchanged if no placeholder', () => {
-    expect(renderCopyright('© 2026 Factuurt', 2026)).toBe('© 2026 Factuurt')
+    expect(renderCopyright('© 2026 FaktuurT', 2026)).toBe('© 2026 FaktuurT')
   })
 
   it('converts number year to string', () => {

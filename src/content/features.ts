@@ -39,7 +39,7 @@ export const features: FeaturesContent = {
         'Je werven en afspraken staan op een rij, zodat je nooit twee klanten op hetzelfde uur inplant.',
       icon: 'CalendarDays',
       slug: 'agenda',
-      imageAlt: 'Agenda-scherm van Factuurt met geplande werven en afspraken',
+      imageAlt: 'Agenda-scherm van FaktuurT met geplande werven en afspraken',
     },
     {
       title: 'Werkbon ter plekke',
@@ -47,7 +47,7 @@ export const features: FeaturesContent = {
         'Je noteert uren, materiaal en foto’s op de werf en laat de klant meteen tekenen - niets raakt kwijt.',
       icon: 'ClipboardList',
       slug: 'werkbon',
-      imageAlt: 'Werkbon in Factuurt met timer, foto\'s en handtekening van de klant',
+      imageAlt: 'Werkbon in FaktuurT met timer, foto\'s en handtekening van de klant',
     },
     {
       title: 'Factuur & PDF',
@@ -55,7 +55,7 @@ export const features: FeaturesContent = {
         'Vanuit de werkbon stuur je in één tik een nette factuur, klaar als PDF voor je klant.',
       icon: 'FileText',
       slug: 'facturen',
-      imageAlt: 'Facturenoverzicht van Factuurt met betaalstatus per factuur',
+      imageAlt: 'Facturenoverzicht van FaktuurT met betaalstatus per factuur',
     },
     {
       title: 'Prijsbibliotheek',
@@ -63,7 +63,7 @@ export const features: FeaturesContent = {
         'Je eigen tarieven zet je één keer klaar en gebruik je daarna in elke offerte opnieuw.',
       icon: 'BookOpen',
       slug: 'bibliotheek',
-      imageAlt: 'Prijsbibliotheek van Factuurt met opgeslagen materialen en tarieven',
+      imageAlt: 'Prijsbibliotheek van FaktuurT met opgeslagen materialen en tarieven',
     },
   ],
 }

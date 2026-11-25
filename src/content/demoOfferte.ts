@@ -58,7 +58,7 @@ export const demoOfferte: DemoOfferteContent = {
   flipLabel: 'Maak er een werkbon van',
   offerteStatus: 'Concept',
   werkbonStatus: 'Getekend',
-  outro: 'Zo werkt heel Factuurt: één keer invoeren, de rest volgt vanzelf.',
+  outro: 'Zo werkt heel FaktuurT: één keer invoeren, de rest volgt vanzelf.',
   terugLabel: 'Terug naar de offerte',
   klantNaam: 'Elektro Peeters',
   projectNaam: 'Renovatie zekeringkast',
