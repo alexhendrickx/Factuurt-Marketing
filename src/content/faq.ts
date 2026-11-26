@@ -24,7 +24,7 @@ export const faq: FaqContent = {
   intro: '',
   entries: [
     {
-      question: 'Wat kost Factuurt?',
+      question: 'Wat kost FaktuurT?',
       answer:
         'Je start gratis en maakt meteen je eerste offerte, werkbon en factuur. Geen kaartgegevens nodig om te beginnen.',
     },
@@ -41,7 +41,7 @@ export const faq: FaqContent = {
     {
       question: 'Werkt het op iPhone én Android?',
       answer:
-        'Ja, op allebei. Factuurt draait gewoon in je browser op de werf, zonder dat je iets uit een appstore hoeft te halen.',
+        'Ja, op allebei. FaktuurT draait gewoon in je browser op de werf, zonder dat je iets uit een appstore hoeft te halen.',
     },
   ],
 }

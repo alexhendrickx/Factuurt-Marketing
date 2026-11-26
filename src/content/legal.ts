@@ -33,7 +33,7 @@ const draftNotice =
 export const privacy: LegalPageContent = {
   title: 'Privacyverklaring',
   description:
-    'Hoe Factuurt omgaat met je persoonsgegevens: welke data we verwerken, waarom, hoe lang en welke rechten je hebt.',
+    'Hoe FaktuurT omgaat met je persoonsgegevens: welke data we verwerken, waarom, hoe lang en welke rechten je hebt.',
   updated: '14 juli 2026',
   isDraft: true,
   draftNotice,
@@ -41,7 +41,7 @@ export const privacy: LegalPageContent = {
     {
       heading: 'Wie zijn we',
       paragraphs: [
-        'Factuurt is een dienst voor zelfstandige elektriciens in België. Voor vragen over je gegevens bereik je ons via het contactformulier op deze site. [Bedrijfsnaam, ondernemingsnummer en adres in te vullen.]',
+        'FaktuurT is een dienst voor zelfstandige elektriciens in België. Voor vragen over je gegevens bereik je ons via het contactformulier op deze site. [Bedrijfsnaam, ondernemingsnummer en adres in te vullen.]',
       ],
     },
     {
@@ -81,7 +81,7 @@ export const privacy: LegalPageContent = {
 export const voorwaarden: LegalPageContent = {
   title: 'Algemene voorwaarden',
   description:
-    'De voorwaarden voor het gebruik van Factuurt en deze website.',
+    'De voorwaarden voor het gebruik van FaktuurT en deze website.',
   updated: '14 juli 2026',
   isDraft: true,
   draftNotice,
@@ -89,19 +89,19 @@ export const voorwaarden: LegalPageContent = {
     {
       heading: 'Toepassing',
       paragraphs: [
-        'Deze voorwaarden zijn van toepassing op het gebruik van de Factuurt-app en deze website. Door de dienst te gebruiken, ga je met deze voorwaarden akkoord. [Definitieve versie in te vullen door de aanbieder.]',
+        'Deze voorwaarden zijn van toepassing op het gebruik van de FaktuurT-app en deze website. Door de dienst te gebruiken, ga je met deze voorwaarden akkoord. [Definitieve versie in te vullen door de aanbieder.]',
       ],
     },
     {
       heading: 'De dienst',
       paragraphs: [
-        'Factuurt helpt zelfstandige elektriciens bij het maken van offertes, werkbonnen en facturen. We doen ons best om de dienst betrouwbaar en beschikbaar te houden, maar kunnen ononderbroken beschikbaarheid niet garanderen.',
+        'FaktuurT helpt zelfstandige elektriciens bij het maken van offertes, werkbonnen en facturen. We doen ons best om de dienst betrouwbaar en beschikbaar te houden, maar kunnen ononderbroken beschikbaarheid niet garanderen.',
       ],
     },
     {
       heading: 'Jouw verantwoordelijkheid',
       paragraphs: [
-        'Je blijft zelf verantwoordelijk voor de juistheid van de gegevens die je in de app invoert en voor de fiscale en wettelijke conformiteit van je facturen. Factuurt is een hulpmiddel, geen boekhoudkundig of juridisch advies.',
+        'Je blijft zelf verantwoordelijk voor de juistheid van de gegevens die je in de app invoert en voor de fiscale en wettelijke conformiteit van je facturen. FaktuurT is een hulpmiddel, geen boekhoudkundig of juridisch advies.',
       ],
     },
     {

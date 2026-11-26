@@ -34,7 +34,7 @@ export const offline: OfflineContent = {
   intro:
     'Geen bereik in de kelder of de nieuwbouw? Je maakt je offerte en werkbon gewoon af, de factuurt synchroniseert vanzelf zodra je weer netwerk hebt.',
   slug: 'offline',
-  imageAlt: 'Factuurt-scherm dat toont dat je werkbon offline bewaard blijft en later synchroniseert',
+  imageAlt: 'FaktuurT-scherm dat toont dat je werkbon offline bewaard blijft en later synchroniseert',
   points: [
     {
       title: 'Geen bereik nodig',

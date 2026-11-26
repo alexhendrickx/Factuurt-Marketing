@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 test('hero toont headline, subtitle en het dashboard-screenshot', async ({ page }) => {
   await page.goto('/')
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
-  await expect(page.getByRole('img', { name: 'Het dashboard van Factuurt op een telefoon' })).toBeVisible()
+  await expect(page.getByRole('img', { name: 'Het dashboard van FaktuurT op een telefoon' })).toBeVisible()
 })
 
 test("hero-CTA's wijzen naar de juiste targets", async ({ page }) => {

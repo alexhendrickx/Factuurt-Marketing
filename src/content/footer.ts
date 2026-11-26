@@ -55,10 +55,10 @@ export const footer: FooterContent = {
     name: 'Alex Hendrickx',
     email: 'alexhendrickx01@gmail.com',
     activity:
-      'Factuurt is software voor facturatie en administratie voor zelfstandige elektriciens in België: offertes, werkbonnen en facturen vanop de werf.',
+      'FaktuurT is software voor facturatie en administratie voor zelfstandige elektriciens in België: offertes, werkbonnen en facturen vanop de werf.',
     // Vul in zodra beschikbaar; leeg → wordt niet getoond.
     ondernemingsnummer: '',
     address: '',
   },
-  copyrightTemplate: '© {year} Factuurt - gemaakt voor de elektricien op de werf.',
+  copyrightTemplate: '© {year} FaktuurT - gemaakt voor de elektricien op de werf.',
 }
